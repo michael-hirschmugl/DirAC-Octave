@@ -13,6 +13,10 @@
 % - DirAC_run_stft()
 % - Headphone_ITDILD_simulation()
 %
+% Other ToDo:
+% - Change processing to 6 speaker setup
+% - implement HRTF simulation
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clear all
