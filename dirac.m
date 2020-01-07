@@ -22,6 +22,8 @@
 clear all
 clc
 
+load pkg signal
+
 fs = 48000;
 siglen = 12 * fs;
 
