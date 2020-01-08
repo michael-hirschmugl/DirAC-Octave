@@ -23,6 +23,8 @@ nOutChan = length(ls_dirs);                         % Amount of speakers
 DirAC_struct.nOutChan = nOutChan;
 
 % compute VBAP gain table
+% Function by Archontis Politis
+% return = (Ndirs x Nspeaker) gain matrix
 DirAC_struct.VBAPtable = getGainTable(ls_dirs);
 
 % compute virtual-microphone/ambisonic static decoding matrix
@@ -30,6 +32,9 @@ dirCoeff = (sqrt(3)-1)/2;                           % supercardioid virtual micr
 DirAC_struct.decodingMtx = computeVMICdecMtx(ls_dirs, dirCoeff);
 
 % load/design decorrelating filters
+% designs FIR filters for decorrelation
+%This script creates decorrelation filters that have randomly
+% delayed impulses at different frequency bands.
 [DirAC_struct.decorFilt, DirAC_struct.decorDelay] = computeDecorrelators(nOutChan, fs);
 
 % winsize for STFT, with 50% overlap

@@ -1,4 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function [decorFilt, decorDelay] = computeDecorrelators(nOutChan, fs)
 % calls function that designs FIR filters for decorrelation
 %decorFilt = compute_delay_decorrelation_response(fs,nOutChan);

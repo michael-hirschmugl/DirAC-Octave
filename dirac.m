@@ -8,13 +8,15 @@
 %
 % Licensed under GNU General Public License v2.0
 %
-% Missing functions:
-% - DirAC_run_stft()
-% - Headphone_ITDILD_simulation()
 %
 % Other ToDo:
 % - Change processing to 6 (4?) speaker setup
 % - implement HRTF simulation (done in Reaper)
+% - document getGainTable
+% - document computeVMICdecMtx
+% - document computeDecorrelators
+% - document DirAC_init_stft
+% - document DirAC_run_stft
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -83,7 +85,7 @@ ls_dirs_2D = [0 90 180 270]';
 DirAC_struct = DirAC_init_stft(ls_dirs_2D, fs);
 
 % DirAC processing
-%[LSsig_2D, DIRsig_2D, DIFFsig_2D, DirAC_struct] = DirAC_run_stft(bfsig_2D, DirAC_struct);
+[LSsig_2D, DIRsig_2D, DIFFsig_2D, DirAC_struct] = DirAC_run_stft(bfsig_2D, DirAC_struct);
 
 % Simple simulation of LS listening with headphones
 %HPsig_LIN2D   = Headphone_ITDILD_simulation(LINsig_2D, DirAC_struct);
