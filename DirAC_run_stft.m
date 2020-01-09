@@ -13,12 +13,15 @@ nInChan = size(insig,2);
 nOutChan = DirAC_struct.nOutChan;
 
 % STFT frame count and initialization
-winsize = DirAC_struct.winsize;
+winsize = DirAC_struct.winsize
 hopsize = winsize/2;
 
 % double the window size to suppress aliasing
 fftsize = 2*winsize;
-Nhop = ceil(lInsig/hopsize) + 2;
+lInsig
+hopsize
+ceil(lInsig/hopsize)
+Nhop = ceil(lInsig/hopsize) + 2
 
 % zero padding at start and end
 insig = [zeros(hopsize,nInChan); insig; zeros(Nhop*hopsize - lInsig - ...
