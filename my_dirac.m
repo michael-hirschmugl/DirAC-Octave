@@ -37,49 +37,39 @@ nOutChan = 4;
 % about 20ms
 % winsize for STFT, with 50% overlap
 winsize = 1024;
-hopsize = winsize/2;
+hopsize = 512;
 
 % double the window size to suppress aliasing
-fftsize = 2*winsize;
+fftsize = 2048;
 
 % Amount of overlapping frames
-% rounded up with ceil() and + 2                                      ???
-Nhop = ceil(lInsig/hopsize) + 2;
+% rounded up with ceil()
+Nhop = ceil(lInsig/hopsize);
 
 % zero padding at start and end
-insig_2D = [zeros(hopsize,nInChan); insig_2D; zeros(Nhop*hopsize - lInsig - ...
-                                              hopsize,nInChan)];
+% Nhop + 2 for complete length because of additional 0 padded frames
+insig_2D = [zeros(hopsize,nInChan); ...
+	        insig_2D; ...
+            zeros((Nhop+2)*hopsize - lInsig - hopsize,nInChan)];
 
-% arrays for non-diffuse (direct) and diffuse sound output
+% arrays for non-diffuse (direct) output
 dirOutsig = zeros(size(insig_2D,1) + fftsize, nOutChan);
-diffOutsig = zeros(size(insig_2D,1) + fftsize, nOutChan);
 
 % hanning window for analysis synthesis
 window = hanning(winsize);
 
 % zero pad both window and input frame to 2*winsize to 
-% suppress temporal aliasing from adaptive filters                    ???
+% suppress temporal aliasing from filters
 window = [window; zeros(winsize,1)]; 
 window = window*ones(1,nInChan);
 
 
 
-% DirAC analysis initialization
-
-% initial values for recursive smoothing                              ???
-DirAC_struct.Intensity_smooth = 0;
-
-% initial values for recursive smoothing                              ???
-DirAC_struct.Intensity_short_smooth = 0;
-
-% initial values for recursive smoothing                              ???
-DirAC_struct.energy_smooth = 0;
-DirAC_struct.gains_smooth = 0;
-
 % STFT runtime loop
-for idx = 0:hopsize:(Nhop-2)*hopsize
+for idx = 0:hopsize:(Nhop)*hopsize
     % zero pad both window and input frame to 2*winsize for aliasing suppression
     inFramesig = [insig_2D(idx+(1:winsize),:); zeros(winsize,nInChan)]; 
+
     inFramesig = inFramesig .* window;
 
     % spectral processing
@@ -94,14 +84,15 @@ for idx = 0:hopsize:(Nhop-2)*hopsize
 
     % overlap-add
     dirOutFramesig = real(ifft([dirOutFramespec; ...
-                                conj(dirOutFramespec(end-1:-1:2,:))]));
+                                conj(dirOutFramespec(end-1:-1:2,:))]));   % ???
     dirOutsig(idx+(1:fftsize),:) = dirOutsig(idx + (1:fftsize),:) ...
                                                  + dirOutFramesig;
 end
 
-% remove delay caused by the intepolation of gains and circular shift
-dirOutsig = dirOutsig(hopsize+1:end,:);
-diffOutsig = diffOutsig(hopsize+1:end,:);
+
+
+% remove delay
+dirOutsig = dirOutsig(hopsize + 1:end,:);
 
 DIRsig = dirOutsig(hopsize + (1:lInsig),:);
 
