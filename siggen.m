@@ -57,14 +57,14 @@ bfsig_2D(end-500:end,:) = bfsig_2D(end-500:end,:) .* (linspace(1,0,501)' ...
                           * [1 1 1 1]);
 
 audiowrite(['Output2D-B-Format.wav'],bfsig_2D,fs);
-
+             
 % single signal B-Format (with noise)
 bfsig1_2D = [bw1 bx1 by1 bz1*0];
 bfsig1_2D = bfsig1_2D / max(max(abs(bfsig1_2D)))/3;
 bfsig1_2D(end-500:end,:) = bfsig1_2D(end-500:end,:) .* (linspace(1,0,501)' ...
                           * [1 1 1 1]);
 
-audiowrite(['Output2D-singleSig-B-Format.wav'],bfsig1_2D,fs);
+audiowrite(['Output3D-singleSig-B-Format.wav'],bfsig1_2D,fs);
 
 
 %% 3D PROCESSING %%%%

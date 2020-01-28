@@ -1,4 +1,6 @@
 *.wav
 *.RPP-bak
 *.reapeaks
+*.swp
+octave-workspace
 

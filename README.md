@@ -1,5 +1,18 @@
 # DirAC-Octave
-Octave (Matlab) implementation of DirAC (directional audio coding) with a simple simulation for headphones.
+Octave (Matlab) implementation of DirAC (directional audio coding).
 
-siggen.m
-This file implements an Ambisonis B-Format signal generator for 2D and 3D spatial audio signals. The audio files consist of four mono channels and contain W, X, Y and Z components. There are two sawtooth signals which alternate in pitch an spatial position. One signal cycles three times in azimuth and has no elevation modulation. The other signal cycles only once and has additional altitude modulation. Both (2D and 3D) files are 12 seconds in duration and also feature diffuse pink noise with rising level to the end of the audiofile. The files are stored as Output2D-B-Format.wav and Output3D-B-Format.wav in the same folder.
+### my_dirac.m
+Main script file. Reads B-format ambisonics file
+"Output2D-singleSig-B-Format.wav" and seperates it into direct and diffuse
+components which are written to .wav files as well. The diffuse component is not
+decorrelated and the generated files have 48 channels. The channels are specified
+as virtual sound sources in the file des.3.48.9.txt. This file is actually a
+T-design (9-design) that resembles an ideal speaker arrangement for 4th order
+ambisonics. The file is read with the function rdcartspk.m which also converts
+the cartesian coordinates that specify the speaker positions into spherical
+coordinates (angles for elevation and azimuth).
+
+### siggen.m
+Generates 4-channel B-format ambisonics audio files "Output2D-B-Format.wav" (2 signals; 2D rotation + diffuse noise) and "Output2D-singleSig-B-Format.wav" (1 sisgnal; 2D rotation + diffuse noise).
+
+
