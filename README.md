@@ -1,9 +1,9 @@
 # DirAC-Octave
 Octave (Matlab) implementation of DirAC (directional audio coding).
 
-### my_dirac.m
+### dirac.m
 Main script file. Reads B-format ambisonics file
-"Output2D-singleSig-B-Format.wav" and seperates it into direct and diffuse
+"Output3D-B-Format.wav" and seperates it into direct and diffuse
 components which are written to .wav files as well. The diffuse component is not
 decorrelated and the generated files have 48 channels. The channels are specified
 as virtual sound sources in the file des.3.48.9.txt. This file is actually a
@@ -13,6 +13,6 @@ the cartesian coordinates that specify the speaker positions into spherical
 coordinates (angles for elevation and azimuth).
 
 ### siggen.m
-Generates 4-channel B-format ambisonics audio files "Output2D-B-Format.wav" (2 signals; 2D rotation + diffuse noise) and "Output2D-singleSig-B-Format.wav" (1 sisgnal; 2D rotation + diffuse noise).
+Generates 4-channel B-format ambisonics audio files "Output3D-B-Format.wav" (2 sounds; 3D rotation + diffuse noise).
 
 
