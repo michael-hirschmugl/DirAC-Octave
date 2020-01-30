@@ -22,7 +22,7 @@ frewind(fid1);
 
 channels = M / 3;
 
-figure
+%figure
 
 ix = 1;
 while (lines < M)
@@ -36,7 +36,7 @@ end
 
 fclose(fid1);
 
-plot3(matrix(:,1),matrix(:,2),matrix(:,3),'^')
+%plot3(matrix(:,1),matrix(:,2),matrix(:,3),'^')
 
 new_matrix = cart2sph(matrix);
 

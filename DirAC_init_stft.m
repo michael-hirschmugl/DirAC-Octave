@@ -19,6 +19,8 @@ else
     DirAC_struct.dimension = 3;
 end
 size(ls_dirs)
+dimensions = DirAC_struct.dimension;
+dimensions
 nOutChan = length(ls_dirs);
 DirAC_struct.nOutChan = nOutChan;
 nOutChan

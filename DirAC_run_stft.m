@@ -1,4 +1,4 @@
-function [DIRsig, DIFFsig, DirAC_struct] = DirAC_run_stft(insig, DirAC_struct)
+function [dirOutsig, diffOutsig, DirAC_struct] = DirAC_run_stft(insig, DirAC_struct)
 %% Run-time processing of 2D or 3D virtual-microphone STFT DirAC 
 %% for loudspeaker output
 %% Archontis Politis and Ville Pulkki  2016
@@ -10,6 +10,8 @@ nOutChan = DirAC_struct.nOutChan;
 % STFT frame count and initialization
 winsize = DirAC_struct.winsize;
 hopsize = winsize/2;
+DirAC_struct.hopsize = hopsize;
+hopsize
 fftsize = 2*winsize; % double the window size to suppress aliasing
 Nhop = ceil(lInsig/hopsize) + 2;
 Nhop
@@ -66,9 +68,6 @@ end
 dirOutsig = dirOutsig(hopsize+1:end,:);
 diffOutsig = diffOutsig(hopsize+1:end,:);
 
-% remove delay due to windowing and truncate output to original length
-DIRsig = dirOutsig(hopsize+(1:lInsig),:);
-DIFFsig = diffOutsig(hopsize+(1:lInsig),:);
 end
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
