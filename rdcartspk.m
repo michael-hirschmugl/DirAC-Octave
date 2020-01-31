@@ -1,4 +1,4 @@
-function [ele, azi] = rdcartspk(filename)
+function [azi, ele] = rdcartspk(filename)
 
 % This script will read a file with a list of cartesian coordinates and convert 
 % them into spherical coordinates.
@@ -36,9 +36,13 @@ end
 
 fclose(fid1);
 
-%plot3(matrix(:,1),matrix(:,2),matrix(:,3),'^')
+plot3(matrix(:,1),matrix(:,2),matrix(:,3),'^')
 
 new_matrix = cart2sph(matrix);
 
 ele = new_matrix(:,2) .* (180/pi);
 azi = new_matrix(:,1) .* (180/pi);
+
+[azi, ele]
+
+dlmwrite("ls_dirs.txt", [azi, ele], ",");
