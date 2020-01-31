@@ -30,12 +30,12 @@ config += 4*' ' + '"Loudspeakers": [\n'
 
 channel_nr = 1
 for direction in ls_dirs:
-    config += 6*' ' + "{\n"
-    
     split = direction.split(",")
-    if len(split) == 2:
-        azi, ele = split
+    if len(split) != 2:
+        break 
+    azi, ele = split
     
+    config += 6*' ' + "{\n"
     config += 8*' ' + '"Azimuth": ' + azi + ',\n'
     config += 8*' ' + '"Elevation": ' + ele + ',\n'
     # dummy values for MultiEncoder
