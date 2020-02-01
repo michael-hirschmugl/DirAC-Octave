@@ -31,6 +31,8 @@ DirAC_struct.Intensity_short_smooth = 0; % initial values for recursive smoothin
 DirAC_struct.energy_smooth = 0; % initial values for recursive smoothing
 DirAC_struct.gains_smooth = 0;
 
+(Nhop-2)*hopsize
+
 % STFT runtime loop
 for idx = 0:hopsize:(Nhop-2)*hopsize
     % zero pad both window and input frame to 2*winsize for aliasing suppression
@@ -63,6 +65,7 @@ for idx = 0:hopsize:(Nhop-2)*hopsize
     dirOutsig(idx+(1:fftsize),:) = dirOutsig(idx+(1:fftsize),:) + dirOutFramesig;
     diffOutFramesig = real(ifft([diffOutFramespec; conj(diffOutFramespec(end-1:-1:2,:))]));
     diffOutsig(idx+(1:fftsize),:) = diffOutsig(idx+(1:fftsize),:) + diffOutFramesig;
+    idx
 end
 % remove delay caused by the intepolation of gains and circular shift
 dirOutsig = dirOutsig(hopsize+1:end,:);

@@ -9,7 +9,7 @@ pkg load signal
 
 fs=48000;
 
-[bfsig,fs] = audioread('Output3D-B-Format.wav'); 
+[bfsig,fs] = audioread('seperator_p3.wav'); 
 siglen = size(bfsig,1);
 
 [ls_dirs(:,1), ls_dirs(:,2)] = rdcartspk('des.3.48.9.txt');
@@ -45,11 +45,11 @@ tempsig = tempsig(DirAC_struct.hopsize+(1:siglen),:);
 %noSubtempsig(:,4) = zeros(length(tempsig(:,1)),1);
 %noSubtempsig(:,5:13) = tempsig(:,4:12);
 
-%audiowrite(['Output3D-DirAC-direct.wav'],noSubDIRsig,fs);
-%audiowrite(['Output3D-DirAC-diffuse.wav'],noSubDIFFsig,fs);
-%audiowrite(['Output3D-DirAC-diffuse-decorr.wav'],noSubtempsig,fs); 
+%audiowrite(['DirAC-directional-12spkr.wav'],noSubDIRsig,fs);
+%audiowrite(['DirAC-diffuse-12spkr.wav'],noSubDIFFsig,fs);
+%audiowrite(['DirAC-diffuse-decorr-12spkr.wav'],noSubtempsig,fs); 
 
     
-audiowrite(['Output3D-DirAC-direct.wav'],DIRsig,fs);
-audiowrite(['Output3D-DirAC-diffuse.wav'],DIFFsig,fs);
-audiowrite(['Output3D-DirAC-diffuse-decorr.wav'],tempsig,fs); 
+audiowrite(['DirAC-directional-T-design_p3.wav'],DIRsig,fs);
+audiowrite(['DirAC-diffuse-T-design_p3.wav'],DIFFsig,fs);
+audiowrite(['DirAC-diffuse-decorr-T-design_p3.wav'],tempsig,fs); 
