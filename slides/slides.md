@@ -85,7 +85,7 @@ _resultierende Annahme_: Menschen können zu einem Zeitpunkt nur einen Cue pro k
 
 # DirAC: Funktionsweise 2
 
-![DirAC Funktion: high quality Algorithmus (Pilkki 2007)](pic/pulkki_dirac_flow_2.png)
+![DirAC Funktion: high quality Algorithmus (Pulkki 2007)](pic/pulkki_dirac_flow_2.png)
 
 
 
@@ -130,7 +130,6 @@ _resultierende Annahme_: Menschen können zu einem Zeitpunkt nur einen Cue pro k
 - Filter für Richtungs- und Diffusanteil generieren
 	- Array mit Gain-Werten für Lautsprecher
 	- 1 Gain-Wert pro Frequenz-Bin und Speaker (= Matrix)
-	- Filterung im Frequenzbereich
 
 - Filterung im Frequenzbereich
 	- Direkt und Diffusanteil aus omnidirektionalem Anteil erzeugen
@@ -169,9 +168,9 @@ In octave implementiert: originale DirAC Methode
 
 # Hörversuch 1
 
-- Reaper Projekt gesteuert durch Murshra-Test
+- Reaper Projekt gesteuert durch Mushra-Test
 
-- 6 Algorithmen
+- 6 Algorithmen + Referenz
 
 - 4 Testsignale
 
@@ -194,8 +193,6 @@ In octave implementiert: originale DirAC Methode
 
 - Compass
 
-- FOA Referenz
-
 
 # Hörversuch 3
 
@@ -210,7 +207,23 @@ In octave implementiert: originale DirAC Methode
 - Umgebungsgeräusche Straßenkreuzung
 
 
-# Erste Ergebnisse und Erwartungungen vom Hörversuch
+# Erste Ergebnisse und Erwartungen vom Hörversuch
 
+- FOA Referenz:
+  - sehr guter Klangeindruck
+  - Lokalisierung nicht besonders gut
 
-# Ergebnisse
+- Compass:
+  - Nicht gut
+
+- T-Design mit Widening & Harpex:
+  - klingen sehr ähnlich
+  - guter Klangeindruck
+  - gute Lokalisation
+
+- T-Design mit FDN:
+  - Erzeugt unnatürlichen zusätzlichen Raum
+
+- 12 Speaker:
+  - Artefakte im hochfrequenten Bereich
+  - T-Design definitv besser
