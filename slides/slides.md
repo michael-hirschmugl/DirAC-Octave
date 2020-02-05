@@ -52,7 +52,7 @@ Untersuching der Klangqualität verschiedener Upmixingmethoden
 - Optional: Dekorrelation
 - ISTFT und Overlap-Add
 
-# Trennung Direkt- und Diffusanteil
+# Trennung Direkt- und Diffusanteil 1
 - W(k,n) ... Schalldruck (Omnidirektionales B-Format Signal)
 - ![Schnellevektor](pic/schnellevektor.png)
 - V(m,k,n) ... Schnelle und Schalleinfallsrichtung
@@ -60,6 +60,16 @@ Untersuching der Klangqualität verschiedener Upmixingmethoden
 - ![Richtungsvektor](pic/richtung.png)
 - ![Sphärische Koordinaten](pic/sph_koordinaten.png)
 - ![Diffusität](pic/diffusitaet.png)
+
+# Trennung Direkt- und Diffusanteil 2
+- Kodierung auf Lautsprecheranordnung
+- Filter für Richtungs- und Diffusanteil generieren
+	- Array mit Gain-Werten für Lautsprecher
+	- 1 Gain-Wert pro Frequenz-Bin und Speaker (= Matrix)
+	- Filterung im Frequenzbereich
+- Filterung im Frequenzbereich
+	- Direkt und Diffusanteil aus omnidirektionalem Anteil erzeugen
+
 
 # Mittelung
 
