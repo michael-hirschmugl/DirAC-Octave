@@ -1,0 +1,73 @@
+{
+  "MushraExperiment" :
+  {
+
+
+    "Title" : "Algo 2 Upmix",
+    "Description" : "Dieses Experiment untersucht ....",
+    "Investigator" : "Hirschmugl, Planton",
+
+    "RandomizeStimuli" : true,
+    "RandomizeTrials" : true,
+    "RandomizeParts" : true,
+
+    "OSCHostname" : "127.0.0.1",
+    "OSCPort" : 10010,
+    "TrialBeginOSCMessage" : ["/stop 1", "/action 40635", "/region {RegionNumbers[TrialIndex]}", "/action _SWS_SELNEXTMORR",  "/track/1/volume/db/ -140.0", "/track/2/volume/db/ -140.0", "/track/3/volume/db/ -140.0" , "/track/4/volume/db/ -140.0", "/track/5/volume/db/ -140.0"],
+    "TrialEndOSCMessage" : "/",
+    "TrialPlayOSCMessage" : "/play 1",
+    "TrialPauseOSCMessage" : "/stop 1",
+    "StimulusSelectOSCMessage" : "/track/{StimulusIndex+1}/volume/db 0.0",
+    "StimulusDeselectOSCMessage" : "/track/{StimulusIndex+1}/volume/db -140.0",
+
+
+
+    "NumberOfStimuli" : 9,
+    "ReferenceAvailable" : false,
+
+    "TrialNames" : ["Scene1", "Scene2", "Scene3", "Scene4", "Scene5", "Scene6"],
+    "RegionNumbers" : [1, 2, 3, 4, 5, 6],
+
+    "Parts" :
+    [
+      {
+        "PartTitle" : "Klangqualität",
+        "StartPrompt" : "Wie gut bewerten Sie die Klangqualität?",
+        "EndPrompt" : "Fertig mit Klangqualität Teil...",
+
+
+        "Scale" :
+        {
+          "Min" : 0,
+          "Max" : 100,
+          "StepSize" : 1,
+          "DefaultValue" : 50,
+          "Labels" : ["sehr schlecht", "sehr gut"],
+        },
+
+        "NumberOfTrials" : 6,
+        "TrialType" : "OSCTrial",
+        "TrialName" : "Klangqualitaet, {TrialNames[TrialIndex]}",
+      },
+      {
+        "PartTitle" : "realistischer Raumeindruck",
+        "StartPrompt" : "Ist der räumliche Eindruck der Beispiele für Sie eher realistisch oder synthetisch?",
+        "EndPrompt" : "Fertig mit Raumeindruck Teil",
+
+        "Scale" :
+        {
+          "Min" : 0,
+          "Max" : 100,
+          "StepSize" : 1,
+          "DefaultValue" : 50,
+          "Labels" : ["synthetisch", "realistisch"],
+        },
+
+        "NumberOfTrials" : 6,
+        "TrialType" : "OSCTrial",
+        "TrialName" : "Klang, {TrialNames[TrialIndex]}",
+      }
+    ]
+
+  }
+}
