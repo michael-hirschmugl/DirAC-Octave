@@ -40,6 +40,17 @@ Untersuching der Klangqualität verschiedener Upmixingmethoden
 
 # DirAC: Funktionsweise
 
+# Ablauf in Matlab/Octave
+- B-Format Ausgangssignal
+- Fensterung mit Hanning im Zeitbereich
+- STFT
+- Analyse von Richtungs- und Diffusanteil
+- Upmixing auf Lautsprecheranordnung
+	- 12 Speaker (Produktionsstudio)
+	- T-Design (Ambisonics 4ter Ordnung)
+- Trennung/Filterung
+- Optional: Dekorrelation
+- ISTFT und Overlap-Add
 
 # Trennung Direkt- und Diffusanteil
 
