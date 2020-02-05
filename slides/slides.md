@@ -1,10 +1,8 @@
 ---
-Author: Michael Hirschmuggl, Manuel Planton
-title: Algorithmen 2
+author: Michael Hirschmugl, Manuel Planton
+title: Algorithmen in Ak. & CM 2
+subtitle: Untersuchung der Klangqualität verschiedener Upmixingmethoden für DirAC
 ---
-
-Untersuchung der Klangqualität verschiedener Upmixingmethoden
-=============================================================
 
 
 # Überblick über die Präsentation
@@ -14,6 +12,16 @@ Untersuchung der Klangqualität verschiedener Upmixingmethoden
 - Annahmen aus der Psychoakustik
 
 - Funktionsweise
+
+- Trennung Direkt- und Diffusanteil
+
+- Upmixing
+
+- Dekorrelationsmethoden
+
+- Hörversuch
+
+- Erste Ergebnisse und Erwartungen
 
 
 # DirAC: Überblick
@@ -58,7 +66,7 @@ Untersuchung der Klangqualität verschiedener Upmixingmethoden
 
 # DirAC: Annahmen aus der Psychoakustik 2
 
-4. Die wahrgenommen Richtung wird bestimmt von:
+4. Die wahrgenomme Richtung wird bestimmt von:
 
   - DOA
   
@@ -143,13 +151,20 @@ _resultierende Annahme_: Menschen können zu einem Zeitpunkt nur einen Cue pro k
 
 - FDN: Feedback Delay Network
 
-![Feedback Delay Network (Smith)](pic/FDN_smith.png){width=70%}
+![Feedback Delay Network (Smith)](pic/FDN_smith.png)
 
 Plugin: FdnReverb aus der IEM Plug-in Suite
+
+
+# Dekorrelationsmethoden 2
 
 - Widening: frequenzabhängiges Panning um die Panningrichtung
 
 Plugin: ambix_widening
+
+- Random Phase: Faltung der Signale mit weißem Rauschen
+
+In octave implementiert: originale DirAC Methode
 
 
 # Hörversuch 1
