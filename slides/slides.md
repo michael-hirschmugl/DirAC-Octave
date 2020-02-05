@@ -130,9 +130,13 @@ _resultierende Annahme_: Menschen können zu einem Zeitpunkt nur einen Cue pro k
 
 # Upmixing
 
-![9-design T-design](pic/t-design.png)
+- 2 Methoden:
+  - Direkt auf abbildende Speakeranordnung
+  - Allgemein B-Format höherer Ordnung
 
-+ Erlaubt verlustloses Konvertieren zwischen B-Format und Lautsprecheranordnung
+![9-design T-design](pic/t-design.png){ width=130px }
+
+- T-Design: Erlaubt verlustloses Konvertieren zwischen B-Format und Lautsprecheranordnung
 
 
 # Dekorrelationsmethoden
