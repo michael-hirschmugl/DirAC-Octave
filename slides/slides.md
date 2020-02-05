@@ -38,7 +38,7 @@ Untersuchung der Klangqualität verschiedener Upmixingmethoden
 1. DOA: Direction of Arrival
 
   - ITD
-  
+
   - ILD
   
   - monaurale cues
@@ -138,6 +138,16 @@ _resultierende Annahme_: Menschen können zu einem Zeitpunkt nur einen Cue pro k
 
 
 # Dekorrelationsmethoden
+
+- FDN: Feedback Delay Network
+
+![Feedback Delay Network (Smith)](pic/FDN_smith.png){width=70%}
+
+Plugin: FdnReverb aus der IEM Plug-in Suite
+
+- Widening: frequenzabhängiges Panning um die Panningrichtung
+
+Plugin: ambix_widening
 
 
 # Hörversuch
