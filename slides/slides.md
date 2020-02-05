@@ -120,11 +120,15 @@ _resultierende Annahme_: Menschen können zu einem Zeitpunkt nur einen Cue pro k
 
 ![Richtungsvektor](pic/richtung.png){ width=300px }
 
+
+# Trennung Direkt- und Diffusanteil 2
+
 ![Sphärische Koordinaten](pic/sph_koordinaten.png){ width=250px }
 
 ![Diffusität](pic/diffusitaet.png){ width=250px }
 
-# Trennung Direkt- und Diffusanteil 2
+
+# Trennung Direkt- und Diffusanteil 3
 - Kodierung auf Lautsprecheranordnung
 
 - Filter für Richtungs- und Diffusanteil generieren
@@ -210,20 +214,24 @@ In octave implementiert: originale DirAC Methode
 # Erste Ergebnisse und Erwartungen vom Hörversuch
 
 - FOA Referenz:
-  - sehr guter Klangeindruck
-  - Lokalisierung nicht besonders gut
+    - sehr guter Klangeindruck
+    - Lokalisierung nicht besonders gut
+
 
 - Compass:
-  - Nicht gut
+    - Nicht gut
+
 
 - T-Design mit Widening & Harpex:
-  - klingen sehr ähnlich
-  - guter Klangeindruck
-  - gute Lokalisation
+    - klingen sehr ähnlich
+    - guter Klangeindruck
+    - gute Lokalisation
+
 
 - T-Design mit FDN:
-  - Erzeugt unnatürlichen zusätzlichen Raum
+    - Erzeugt unnatürlichen zusätzlichen Raum
+
 
 - 12 Speaker:
-  - Artefakte im hochfrequenten Bereich
-  - T-Design definitv besser
+    - Artefakte im hochfrequenten Bereich
+    - T-Design definitv besser
