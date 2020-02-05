@@ -3,5 +3,6 @@
 *.reapeaks
 *.swp
 *.pdf
+slides/*.pdf
 octave-workspace
 

@@ -42,31 +42,45 @@ Untersuching der Klangqualität verschiedener Upmixingmethoden
 
 # Ablauf in Matlab/Octave
 - B-Format Ausgangssignal
+
 - Fensterung mit Hanning im Zeitbereich
+
 - STFT
+
 - Analyse von Richtungs- und Diffusanteil
+
 - Upmixing auf Lautsprecheranordnung
 	- 12 Speaker (Produktionsstudio)
 	- T-Design (Ambisonics 4ter Ordnung)
+
 - Trennung/Filterung
+
 - Optional: Dekorrelation
+
 - ISTFT und Overlap-Add
 
 # Trennung Direkt- und Diffusanteil 1
 - W(k,n) ... Schalldruck (Omnidirektionales B-Format Signal)
-- ![Schnellevektor](pic/schnellevektor.png)
+
+![Schnellevektor](pic/schnellevektor.png){ width=200px }
+
 - V(m,k,n) ... Schnelle und Schalleinfallsrichtung
 	- Auch Blindanteile enthalten!
-- ![Richtungsvektor](pic/richtung.png)
-- ![Sphärische Koordinaten](pic/sph_koordinaten.png)
-- ![Diffusität](pic/diffusitaet.png)
+
+![Richtungsvektor](pic/richtung.png){ width=300px }
+
+![Sphärische Koordinaten](pic/sph_koordinaten.png){ width=250px }
+
+![Diffusität](pic/diffusitaet.png){ width=250px }
 
 # Trennung Direkt- und Diffusanteil 2
 - Kodierung auf Lautsprecheranordnung
+
 - Filter für Richtungs- und Diffusanteil generieren
 	- Array mit Gain-Werten für Lautsprecher
 	- 1 Gain-Wert pro Frequenz-Bin und Speaker (= Matrix)
 	- Filterung im Frequenzbereich
+
 - Filterung im Frequenzbereich
 	- Direkt und Diffusanteil aus omnidirektionalem Anteil erzeugen
 
