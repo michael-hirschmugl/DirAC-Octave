@@ -1,0 +1,295 @@
+{
+  "Experiment": "Algo 2 Upmix",
+  "SubjectInformation": {
+    "Subject": "michael2",
+    "Age": 69,
+    "Gender": "male"
+  },
+  "StartTime": "5 Feb 2020 12:30:20",
+  "EndTime": "5 Feb 2020 12:36:47",
+  "Results": {
+    "PresentedOrderOfParts": [
+      1,
+      0
+    ],
+    "Parts": [
+      {
+        "PresentedOrderOfTrials": [
+          1,
+          3,
+          2,
+          0
+        ],
+        "Trials": [
+          {
+            "TrialName": "Klangqualitaet, Scene1",
+            "Ratings": [
+              74.0,
+              21.0,
+              29.0,
+              78.0,
+              84.0,
+              18.0,
+              56.0
+            ],
+            "Scale": {
+              "Min": 0.0,
+              "Max": 100.0,
+              "StepSize": 1.0,
+              "DefaultValue": 50.0,
+              "Labels": [
+                "sehr schlecht",
+                "sehr gut"
+              ]
+            },
+            "PresentedOrderOfStimuli": [
+              5,
+              0,
+              3,
+              1,
+              2,
+              6,
+              4
+            ],
+            "ElapsedTimeInSeconds": 28.43189128645250107752
+          },
+          {
+            "TrialName": "Klangqualitaet, Scene2",
+            "Ratings": [
+              23.0,
+              11.0,
+              12.0,
+              19.0,
+              81.0,
+              29.0,
+              54.0
+            ],
+            "Scale": {
+              "Min": 0.0,
+              "Max": 100.0,
+              "StepSize": 1.0,
+              "DefaultValue": 50.0,
+              "Labels": [
+                "sehr schlecht",
+                "sehr gut"
+              ]
+            },
+            "PresentedOrderOfStimuli": [
+              4,
+              3,
+              2,
+              5,
+              6,
+              1,
+              0
+            ],
+            "ElapsedTimeInSeconds": 38.80815244300939070854
+          },
+          {
+            "TrialName": "Klangqualitaet, Scene3",
+            "Ratings": [
+              18.0,
+              38.0,
+              39.0,
+              44.0,
+              73.0,
+              9.0,
+              25.0
+            ],
+            "Scale": {
+              "Min": 0.0,
+              "Max": 100.0,
+              "StepSize": 1.0,
+              "DefaultValue": 50.0,
+              "Labels": [
+                "sehr schlecht",
+                "sehr gut"
+              ]
+            },
+            "PresentedOrderOfStimuli": [
+              4,
+              0,
+              3,
+              5,
+              6,
+              2,
+              1
+            ],
+            "ElapsedTimeInSeconds": 49.86801116792614152473
+          },
+          {
+            "TrialName": "Klangqualitaet, Scene4",
+            "Ratings": [
+              61.0,
+              14.0,
+              26.0,
+              64.0,
+              59.0,
+              14.0,
+              29.0
+            ],
+            "Scale": {
+              "Min": 0.0,
+              "Max": 100.0,
+              "StepSize": 1.0,
+              "DefaultValue": 50.0,
+              "Labels": [
+                "sehr schlecht",
+                "sehr gut"
+              ]
+            },
+            "PresentedOrderOfStimuli": [
+              5,
+              4,
+              1,
+              2,
+              3,
+              6,
+              0
+            ],
+            "ElapsedTimeInSeconds": 37.179963751249978543
+          }
+        ]
+      },
+      {
+        "PresentedOrderOfTrials": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "Trials": [
+          {
+            "TrialName": "Klang, Scene1",
+            "Ratings": [
+              63.0,
+              67.0,
+              56.0,
+              74.0,
+              66.0,
+              19.0,
+              18.0
+            ],
+            "Scale": {
+              "Min": 0.0,
+              "Max": 100.0,
+              "StepSize": 1.0,
+              "DefaultValue": 50.0,
+              "Labels": [
+                "sehr schlecht",
+                "sehr gut"
+              ]
+            },
+            "PresentedOrderOfStimuli": [
+              5,
+              4,
+              2,
+              6,
+              0,
+              3,
+              1
+            ],
+            "ElapsedTimeInSeconds": 54.40389073664061925228
+          },
+          {
+            "TrialName": "Klang, Scene2",
+            "Ratings": [
+              30.0,
+              16.0,
+              61.0,
+              28.0,
+              81.0,
+              28.0,
+              79.0
+            ],
+            "Scale": {
+              "Min": 0.0,
+              "Max": 100.0,
+              "StepSize": 1.0,
+              "DefaultValue": 50.0,
+              "Labels": [
+                "sehr schlecht",
+                "sehr gut"
+              ]
+            },
+            "PresentedOrderOfStimuli": [
+              0,
+              4,
+              1,
+              2,
+              6,
+              5,
+              3
+            ],
+            "ElapsedTimeInSeconds": 47.81191630391516156351
+          },
+          {
+            "TrialName": "Klang, Scene3",
+            "Ratings": [
+              50.0,
+              70.0,
+              8.0,
+              71.0,
+              77.0,
+              15.0,
+              15.0
+            ],
+            "Scale": {
+              "Min": 0.0,
+              "Max": 100.0,
+              "StepSize": 1.0,
+              "DefaultValue": 50.0,
+              "Labels": [
+                "sehr schlecht",
+                "sehr gut"
+              ]
+            },
+            "PresentedOrderOfStimuli": [
+              0,
+              3,
+              1,
+              4,
+              6,
+              2,
+              5
+            ],
+            "ElapsedTimeInSeconds": 58.38797531773863624949
+          },
+          {
+            "TrialName": "Klang, Scene4",
+            "Ratings": [
+              88.0,
+              87.0,
+              30.0,
+              23.0,
+              22.0,
+              13.0,
+              69.0
+            ],
+            "Scale": {
+              "Min": 0.0,
+              "Max": 100.0,
+              "StepSize": 1.0,
+              "DefaultValue": 50.0,
+              "Labels": [
+                "sehr schlecht",
+                "sehr gut"
+              ]
+            },
+            "PresentedOrderOfStimuli": [
+              0,
+              4,
+              3,
+              1,
+              2,
+              6,
+              5
+            ],
+            "ElapsedTimeInSeconds": 56.42419136519414735176
+          }
+        ]
+      }
+    ]
+  },
+  "MushraAppVersion": "0.1.2"
+}
