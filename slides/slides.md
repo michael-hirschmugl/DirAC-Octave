@@ -53,7 +53,13 @@ Untersuching der Klangqualität verschiedener Upmixingmethoden
 - ISTFT und Overlap-Add
 
 # Trennung Direkt- und Diffusanteil
-
+- W(k,n) ... Schalldruck (Omnidirektionales B-Format Signal)
+- ![Schnellevektor](pic/schnellevektor.png)
+- V(m,k,n) ... Schnelle und Schalleinfallsrichtung
+	- Auch Blindanteile enthalten!
+- ![Richtungsvektor](pic/richtung.png)
+- ![Sphärische Koordinaten](pic/sph_koordinaten.png)
+- ![Diffusität](pic/diffusitaet.png)
 
 # Mittelung
 
