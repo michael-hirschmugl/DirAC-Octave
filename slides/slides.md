@@ -128,13 +128,15 @@ _resultierende Annahme_: Menschen können zu einem Zeitpunkt nur einen Cue pro k
 	- Direkt und Diffusanteil aus omnidirektionalem Anteil erzeugen
 
 
-# Mittelung
+# Upmixing
 
+- 2 Methoden:
+  - Direkt auf abbildende Speakeranordnung
+  - Allgemein B-Format höherer Ordnung
 
-# Upmixing: Direktanteil
+![9-design T-design](pic/t-design.png){ width=130px }
 
-
-# Upmixing: Diffusanteil
+- T-Design: Erlaubt verlustloses Konvertieren zwischen B-Format und Lautsprecheranordnung
 
 
 # Dekorrelationsmethoden
@@ -150,10 +152,50 @@ Plugin: FdnReverb aus der IEM Plug-in Suite
 Plugin: ambix_widening
 
 
-# Hörversuch
+# Hörversuch 1
+
+- Reaper Projekt gesteuert durch Murshra-Test
+
+- 6 Algorithmen
+
+- 4 Testsignale
+
+- Einschätzen von Klangqualität und Räumlichkeit
 
 
-# Erwartete Ergebnisse
+# Hörversuch 2
+
+6 Algorithmen:
+
+- 12 Speaker, Random Phase Decorrelation
+
+- 12 Speaker, FDN Decorrelation
+
+- T-Design, FDN Decorrelation
+
+- T-Design, Widening Plugin
+
+- Harpex
+
+- Compass
+
+- FOA Referenz
+
+
+# Hörversuch 3
+
+4 Testsignale
+
+- Synthetisches Zirpen, rotierend in Azimuth
+
+- Synthetisches Zirpen, rotierend in Azimuth, nachträglich verhallt
+
+- Live-Musik Aufnahme
+
+- Umgebungsgeräusche Straßenkreuzung
+
+
+# Erste Ergebnisse und Erwartungungen vom Hörversuch
 
 
 # Ergebnisse
