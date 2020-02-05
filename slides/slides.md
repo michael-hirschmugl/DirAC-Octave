@@ -128,13 +128,11 @@ _resultierende Annahme_: Menschen können zu einem Zeitpunkt nur einen Cue pro k
 	- Direkt und Diffusanteil aus omnidirektionalem Anteil erzeugen
 
 
-# Mittelung
+# Upmixing
 
+![9-design T-design](pic/t-design.png)
 
-# Upmixing: Direktanteil
-
-
-# Upmixing: Diffusanteil
++ Erlaubt verlustloses Konvertieren zwischen B-Format und Lautsprecheranordnung
 
 
 # Dekorrelationsmethoden
