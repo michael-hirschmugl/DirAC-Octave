@@ -2,5 +2,6 @@
 *.RPP-bak
 *.reapeaks
 *.swp
+*.pdf
 octave-workspace
 
