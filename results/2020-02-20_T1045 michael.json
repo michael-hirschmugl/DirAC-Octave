@@ -1,16 +1,16 @@
 {
   "Experiment": "Algo 2 Upmix",
   "SubjectInformation": {
-    "Subject": "Manuel Planton",
-    "Age": 28,
+    "Subject": "michael",
+    "Age": 31,
     "Gender": "male"
   },
-  "StartTime": "5 Feb 2020 11:40:31",
-  "EndTime": "5 Feb 2020 11:55:08",
+  "StartTime": "20 Feb 2020 10:45:17",
+  "EndTime": "20 Feb 2020 10:52:25",
   "Results": {
     "PresentedOrderOfParts": [
-      0,
-      1
+      1,
+      0
     ],
     "Parts": [
       {
@@ -24,13 +24,13 @@
           {
             "TrialName": "Klangqualitaet, Scene1",
             "Ratings": [
-              78.0,
-              38.0,
-              70.0,
-              32.0,
-              50.0,
-              24.0,
-              21.0
+              28.0,
+              60.0,
+              19.0,
+              25.0,
+              85.0,
+              4.0,
+              85.0
             ],
             "Scale": {
               "Min": 0.0,
@@ -43,26 +43,26 @@
               ]
             },
             "PresentedOrderOfStimuli": [
+              2,
               6,
-              3,
-              4,
               5,
               1,
-              2,
-              0
+              0,
+              3,
+              4
             ],
-            "ElapsedTimeInSeconds": 115.64415214255457442505
+            "ElapsedTimeInSeconds": 47.20475939732252612657
           },
           {
             "TrialName": "Klangqualitaet, Scene2",
             "Ratings": [
-              60.0,
+              17.0,
+              78.0,
+              62.0,
               19.0,
-              20.0,
-              49.0,
-              22.0,
-              68.0,
-              72.0
+              79.0,
+              60.0,
+              86.0
             ],
             "Scale": {
               "Min": 0.0,
@@ -75,26 +75,58 @@
               ]
             },
             "PresentedOrderOfStimuli": [
-              3,
-              6,
-              1,
-              2,
-              4,
               0,
-              5
+              5,
+              1,
+              4,
+              2,
+              3,
+              6
             ],
-            "ElapsedTimeInSeconds": 154.00771397314198907225
+            "ElapsedTimeInSeconds": 38.24402673740638647359
           },
           {
             "TrialName": "Klangqualitaet, Scene3",
             "Ratings": [
-              80.0,
-              72.0,
-              50.0,
-              21.0,
-              35.0,
-              21.0,
-              11.0
+              6.0,
+              33.0,
+              20.0,
+              77.0,
+              81.0,
+              0.0,
+              85.0
+            ],
+            "Scale": {
+              "Min": 0.0,
+              "Max": 100.0,
+              "StepSize": 1.0,
+              "DefaultValue": 50.0,
+              "Labels": [
+                "sehr schlecht",
+                "sehr gut"
+              ]
+            },
+            "PresentedOrderOfStimuli": [
+              2,
+              3,
+              5,
+              6,
+              4,
+              0,
+              1
+            ],
+            "ElapsedTimeInSeconds": 40.99534959416892831996
+          },
+          {
+            "TrialName": "Klangqualitaet, Scene4",
+            "Ratings": [
+              79.0,
+              73.0,
+              67.0,
+              40.0,
+              78.0,
+              3.0,
+              79.0
             ],
             "Scale": {
               "Min": 0.0,
@@ -109,23 +141,33 @@
             "PresentedOrderOfStimuli": [
               0,
               1,
+              2,
+              3,
               5,
               4,
-              6,
-              3,
-              2
+              6
             ],
-            "ElapsedTimeInSeconds": 95.87637587102517500171
-          },
+            "ElapsedTimeInSeconds": 51.79586092930959040359
+          }
+        ]
+      },
+      {
+        "PresentedOrderOfTrials": [
+          0,
+          3,
+          1,
+          2
+        ],
+        "Trials": [
           {
-            "TrialName": "Klangqualitaet, Scene4",
+            "TrialName": "Klang, Scene1",
             "Ratings": [
+              17.0,
+              15.0,
+              17.0,
               58.0,
-              47.0,
-              40.0,
-              60.0,
-              72.0,
-              21.0,
+              29.0,
+              6.0,
               80.0
             ],
             "Scale": {
@@ -134,73 +176,31 @@
               "StepSize": 1.0,
               "DefaultValue": 50.0,
               "Labels": [
-                "sehr schlecht",
-                "sehr gut"
-              ]
-            },
-            "PresentedOrderOfStimuli": [
-              6,
-              1,
-              5,
-              4,
-              3,
-              2,
-              0
-            ],
-            "ElapsedTimeInSeconds": 69.40758254970661766947
-          }
-        ]
-      },
-      {
-        "PresentedOrderOfTrials": [
-          0,
-          1,
-          2,
-          3
-        ],
-        "Trials": [
-          {
-            "TrialName": "Klang, Scene1",
-            "Ratings": [
-              63.0,
-              66.0,
-              71.0,
-              40.0,
-              58.0,
-              0.0,
-              17.0
-            ],
-            "Scale": {
-              "Min": 0.0,
-              "Max": 100.0,
-              "StepSize": 1.0,
-              "DefaultValue": 50.0,
-              "Labels": [
-                "sehr schlecht",
-                "sehr gut"
+                "synthetisch",
+                "realistisch"
               ]
             },
             "PresentedOrderOfStimuli": [
               0,
+              6,
+              4,
+              5,
               3,
               1,
-              5,
-              2,
-              4,
-              6
+              2
             ],
-            "ElapsedTimeInSeconds": 83.12008356527458374785
+            "ElapsedTimeInSeconds": 82.01214670060578271205
           },
           {
             "TrialName": "Klang, Scene2",
             "Ratings": [
-              62.0,
-              46.0,
-              59.0,
-              21.0,
-              22.0,
-              79.0,
-              70.0
+              76.0,
+              63.0,
+              41.0,
+              14.0,
+              85.0,
+              25.0,
+              89.0
             ],
             "Scale": {
               "Min": 0.0,
@@ -208,31 +208,31 @@
               "StepSize": 1.0,
               "DefaultValue": 50.0,
               "Labels": [
-                "sehr schlecht",
-                "sehr gut"
+                "synthetisch",
+                "realistisch"
               ]
             },
             "PresentedOrderOfStimuli": [
-              4,
               0,
               2,
               6,
-              3,
               1,
-              5
+              5,
+              4,
+              3
             ],
-            "ElapsedTimeInSeconds": 145.72018203065559305287
+            "ElapsedTimeInSeconds": 48.35175815845768454437
           },
           {
             "TrialName": "Klang, Scene3",
             "Ratings": [
+              11.0,
+              35.0,
+              30.0,
               62.0,
-              59.0,
-              70.0,
-              41.0,
-              40.0,
-              22.0,
-              0.0
+              80.0,
+              0.0,
+              71.0
             ],
             "Scale": {
               "Min": 0.0,
@@ -240,31 +240,31 @@
               "StepSize": 1.0,
               "DefaultValue": 50.0,
               "Labels": [
-                "sehr schlecht",
-                "sehr gut"
+                "synthetisch",
+                "realistisch"
               ]
             },
             "PresentedOrderOfStimuli": [
-              3,
+              6,
+              0,
               1,
               2,
-              0,
-              6,
               5,
+              3,
               4
             ],
-            "ElapsedTimeInSeconds": 77.85163382528551778705
+            "ElapsedTimeInSeconds": 40.99587768937016107884
           },
           {
             "TrialName": "Klang, Scene4",
             "Ratings": [
-              59.0,
               40.0,
-              68.0,
-              44.0,
-              21.0,
-              60.0,
-              19.0
+              37.0,
+              79.0,
+              37.0,
+              78.0,
+              5.0,
+              82.0
             ],
             "Scale": {
               "Min": 0.0,
@@ -272,20 +272,20 @@
               "StepSize": 1.0,
               "DefaultValue": 50.0,
               "Labels": [
-                "sehr schlecht",
-                "sehr gut"
+                "synthetisch",
+                "realistisch"
               ]
             },
             "PresentedOrderOfStimuli": [
               0,
-              1,
-              4,
-              2,
+              5,
               6,
+              4,
               3,
-              5
+              1,
+              2
             ],
-            "ElapsedTimeInSeconds": 108.07983641563529886298
+            "ElapsedTimeInSeconds": 54.66413324043762855808
           }
         ]
       }

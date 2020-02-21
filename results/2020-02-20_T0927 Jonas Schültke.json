@@ -1,12 +1,12 @@
 {
   "Experiment": "Algo 2 Upmix",
   "SubjectInformation": {
-    "Subject": "franz zotter",
-    "Age": 87,
+    "Subject": "Jonas Sch\u00fcltke",
+    "Age": 29,
     "Gender": "male"
   },
-  "StartTime": "5 Feb 2020 11:35:42",
-  "EndTime": "5 Feb 2020 11:37:22",
+  "StartTime": "20 Feb 2020 9:27:36",
+  "EndTime": "20 Feb 2020 9:50:58",
   "Results": {
     "PresentedOrderOfParts": [
       0,
@@ -15,22 +15,22 @@
     "Parts": [
       {
         "PresentedOrderOfTrials": [
-          3,
           0,
-          2,
-          1
+          3,
+          1,
+          2
         ],
         "Trials": [
           {
             "TrialName": "Klangqualitaet, Scene1",
             "Ratings": [
-              50.0,
-              50.0,
-              50.0,
-              50.0,
-              50.0,
-              50.0,
-              50.0
+              15.0,
+              38.0,
+              26.0,
+              49.0,
+              53.0,
+              20.0,
+              70.0
             ],
             "Scale": {
               "Min": 0.0,
@@ -43,26 +43,26 @@
               ]
             },
             "PresentedOrderOfStimuli": [
-              5,
+              1,
+              0,
+              4,
+              2,
               6,
               3,
-              2,
-              4,
-              1,
-              0
+              5
             ],
-            "ElapsedTimeInSeconds": 18.31987375787735672361
+            "ElapsedTimeInSeconds": 385.91986340550630529833
           },
           {
             "TrialName": "Klangqualitaet, Scene2",
             "Ratings": [
+              38.0,
               50.0,
-              50.0,
-              50.0,
-              50.0,
-              50.0,
-              50.0,
-              50.0
+              22.0,
+              15.0,
+              59.0,
+              6.0,
+              70.0
             ],
             "Scale": {
               "Min": 0.0,
@@ -75,26 +75,26 @@
               ]
             },
             "PresentedOrderOfStimuli": [
-              3,
-              1,
               2,
-              0,
-              5,
               4,
-              6
+              0,
+              3,
+              6,
+              5,
+              1
             ],
-            "ElapsedTimeInSeconds": 4.52022270447151353068
+            "ElapsedTimeInSeconds": 159.13578076205644151742
           },
           {
             "TrialName": "Klangqualitaet, Scene3",
             "Ratings": [
-              50.0,
-              50.0,
-              50.0,
-              50.0,
-              50.0,
-              50.0,
-              50.0
+              45.0,
+              49.0,
+              23.0,
+              29.0,
+              66.0,
+              15.0,
+              84.0
             ],
             "Scale": {
               "Min": 0.0,
@@ -107,26 +107,26 @@
               ]
             },
             "PresentedOrderOfStimuli": [
-              6,
               0,
-              3,
+              1,
+              6,
               2,
               5,
-              4,
-              1
+              3,
+              4
             ],
-            "ElapsedTimeInSeconds": 16.4839885173116655892
+            "ElapsedTimeInSeconds": 181.09983503092817613833
           },
           {
             "TrialName": "Klangqualitaet, Scene4",
             "Ratings": [
+              18.0,
+              72.0,
+              32.0,
               50.0,
-              50.0,
-              50.0,
-              50.0,
-              50.0,
-              50.0,
-              50.0
+              57.0,
+              0.0,
+              68.0
             ],
             "Scale": {
               "Min": 0.0,
@@ -139,36 +139,36 @@
               ]
             },
             "PresentedOrderOfStimuli": [
-              5,
               0,
-              1,
-              2,
-              4,
               3,
-              6
+              2,
+              6,
+              1,
+              4,
+              5
             ],
-            "ElapsedTimeInSeconds": 30.12026061900846940489
+            "ElapsedTimeInSeconds": 166.10771634721632494802
           }
         ]
       },
       {
         "PresentedOrderOfTrials": [
+          3,
           2,
           0,
-          3,
           1
         ],
         "Trials": [
           {
             "TrialName": "Klang, Scene1",
             "Ratings": [
-              50.0,
-              50.0,
-              50.0,
-              50.0,
-              50.0,
-              50.0,
-              50.0
+              5.0,
+              37.0,
+              20.0,
+              30.0,
+              76.0,
+              0.0,
+              60.0
             ],
             "Scale": {
               "Min": 0.0,
@@ -181,26 +181,26 @@
               ]
             },
             "PresentedOrderOfStimuli": [
-              6,
-              2,
-              5,
-              4,
-              0,
+              3,
               1,
-              3
+              0,
+              4,
+              6,
+              5,
+              2
             ],
-            "ElapsedTimeInSeconds": 1.36796594640969271239
+            "ElapsedTimeInSeconds": 131.82318851465751663454
           },
           {
             "TrialName": "Klang, Scene2",
             "Ratings": [
-              50.0,
-              50.0,
-              50.0,
-              50.0,
-              50.0,
-              50.0,
-              50.0
+              62.0,
+              79.0,
+              56.0,
+              27.0,
+              90.0,
+              5.0,
+              68.0
             ],
             "Scale": {
               "Min": 0.0,
@@ -213,26 +213,26 @@
               ]
             },
             "PresentedOrderOfStimuli": [
-              5,
-              2,
-              1,
-              3,
-              6,
               4,
-              0
+              6,
+              0,
+              3,
+              1,
+              2,
+              5
             ],
-            "ElapsedTimeInSeconds": 1.63945217070943627391
+            "ElapsedTimeInSeconds": 115.08764515272731898676
           },
           {
             "TrialName": "Klang, Scene3",
             "Ratings": [
-              50.0,
-              50.0,
-              50.0,
-              50.0,
-              50.0,
-              50.0,
-              50.0
+              14.0,
+              38.0,
+              23.0,
+              48.0,
+              85.0,
+              3.0,
+              67.0
             ],
             "Scale": {
               "Min": 0.0,
@@ -245,26 +245,26 @@
               ]
             },
             "PresentedOrderOfStimuli": [
-              2,
+              6,
+              0,
               3,
               4,
-              5,
               1,
-              0,
-              6
+              2,
+              5
             ],
-            "ElapsedTimeInSeconds": 1.9442043133662028076
+            "ElapsedTimeInSeconds": 97.57242096264575081932
           },
           {
             "TrialName": "Klang, Scene4",
             "Ratings": [
+              36.0,
               50.0,
-              50.0,
-              50.0,
-              50.0,
-              50.0,
-              50.0,
-              50.0
+              27.0,
+              60.0,
+              75.0,
+              12.0,
+              71.0
             ],
             "Scale": {
               "Min": 0.0,
@@ -278,14 +278,14 @@
             },
             "PresentedOrderOfStimuli": [
               0,
-              1,
+              4,
+              5,
+              3,
               2,
               6,
-              5,
-              4,
-              3
+              1
             ],
-            "ElapsedTimeInSeconds": 1.32871929088574391997
+            "ElapsedTimeInSeconds": 116.66837818565700501949
           }
         ]
       }
