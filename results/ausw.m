@@ -4,18 +4,18 @@ clc
 
 matlab_version = 1;
 
-% open in matlab
-files = dir('*.json');
-for nsub = 1 : size(files,1)
-    
-    text = fileread([files(nsub).name]);
-    data = jsondecode(text);
-    
-    for scene = 1 : 4
-        Klang(1:7,scene,nsub) = data.Results.Parts(1).Trials(scene).Ratings([1:7]);
-        Raum(1:7,scene,nsub) = data.Results.Parts(2).Trials(scene).Ratings([1:7]);
-    end
-end
+% open in matlab version > 2011
+% files = dir('*.json');
+% for nsub = 1 : size(files,1)
+%     
+%     text = fileread([files(nsub).name]);
+%     data = jsondecode(text);
+%     
+%     for scene = 1 : 4
+%         Klang(1:7,scene,nsub) = data.Results.Parts(1).Trials(scene).Ratings([1:7]);
+%         Raum(1:7,scene,nsub) = data.Results.Parts(2).Trials(scene).Ratings([1:7]);
+%     end
+% end
 
 % open in octave
 %Raum = load("dirac_room_quality_no_header.txt");
@@ -23,6 +23,11 @@ end
 %Raum = Raum(:, 1:7)';
 %Klang = Klang(:, 1:7)';
 
+% open in matlab version 2011
+Klang = load('dirac_sound_quality_no_header.txt', '-ascii');
+Klang = Klang(:,1:7)';
+Raum = load('dirac_room_quality_no_header.txt', '-ascii');
+Raum = Raum(:,1:7)';
 
 figure
 [Med1, Low, Hi] = CI2(Klang(:,:)'/100);
@@ -32,6 +37,7 @@ hold on
 errorbar([1:7]+0.1,Med2,[Low-Med2],[Hi-Med2],'s','color',0.5*[1 1 1],'markerfacecolor',0.4*[1 1 1])
 
 set(gca,'xtick',1:7,'xticklabel',{'LSDecorr','LSFDN','TdesFDN','TdesWid','Harpex','COMPASS','FOA'})
+ylabel('sound/spatial quality')
 
 xlim([0.5 7.5])
 ylim([-0.05 1.05])
